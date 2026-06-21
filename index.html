@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator — Owais</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="display:flex;flex-direction:column;align-items:center">
+
+  <div class="name-tag">
+    <span class="made-by">Made by</span>
+    <span class="name">Owais</span>
+  </div>
+
+  <div class="calc" role="application" aria-label="Calculator">
+
+    <div class="display" aria-live="polite">
+      <div id="expr"></div>
+      <div id="result-display">0</div>
+    </div>
+
+    <div class="keys" id="keys">
+      <button class="key clear" data-action="clear" aria-label="Clear">AC</button>
+      <button class="key del"   data-action="del"   aria-label="Backspace">&#9003;</button>
+      <button class="key pct"   data-val="%"        aria-label="Percent">%</button>
+      <button class="key op"    data-val="/"        aria-label="Divide">÷</button>
+
+      <button class="key" data-val="7">7</button>
+      <button class="key" data-val="8">8</button>
+      <button class="key" data-val="9">9</button>
+      <button class="key op" data-val="*" aria-label="Multiply">×</button>
+
+      <button class="key" data-val="4">4</button>
+      <button class="key" data-val="5">5</button>
+      <button class="key" data-val="6">6</button>
+      <button class="key op" data-val="-" aria-label="Subtract">−</button>
+
+      <button class="key" data-val="1">1</button>
+      <button class="key" data-val="2">2</button>
+      <button class="key" data-val="3">3</button>
+      <button class="key op" data-val="+" aria-label="Add">+</button>
+
+      <button class="key" data-val="(" aria-label="Left bracket">(</button>
+      <button class="key" data-val=")" aria-label="Right bracket">)</button>
+      <button class="key" data-val="0">0</button>
+      <button class="key" data-val="." aria-label="Decimal">.</button>
+      <button class="key eq eq-full" data-action="eq" aria-label="Equals">=</button>
+    </div>
+
+    <div class="history" id="history" aria-label="Recent calculations"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
