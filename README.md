@@ -50,4 +50,4 @@ Through this project, I gained practical experience in:
 
 ## 📜 License
 
-This project is open-source and available for learning and educational purposes.
+This project is open-source and intended for educational and learning purposes. You are welcome to explore, modify, and contribute to the project while giving appropriate credit..
